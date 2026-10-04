@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Noto Sans Odia', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+}
+
+.font-serif-odia {
+  font-family: 'Noto Serif Odia', Georgia, Cambria, 'Times New Roman', Times, serif;
+}
+
+.font-sans-odia {
+  font-family: 'Noto Sans Odia', system-ui, sans-serif;
+}
+
+.font-newspaper-headline {
+  font-family: 'Noto Serif Odia', 'Newsreader', Georgia, serif;
+}
+
+.font-masthead {
+  font-family: 'Cinzel', 'Noto Serif Odia', serif;
+}
+
+/* Custom newspaper column divider */
+.newspaper-col-rule {
+  border-right: 1px solid #E2E8F0;
+}
+
+/* Marquee animation for Breaking News */
+@keyframes ticker {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+.animate-ticker {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: ticker 40s linear infinite;
+}
+
+.animate-ticker:hover {
+  animation-play-state: paused;
+}
+
+/* Print styles for E-Paper and Article printing */
+@media print {
+  header, footer, nav, .no-print {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+}

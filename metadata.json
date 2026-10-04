@@ -1,0 +1,6 @@
+{
+  "name": "Prime Time Press – ପ୍ରାଇମ ଟାଇମ୍ ପ୍ରେସ୍",
+  "description": "Prime Time Press – ଓଡ଼ିଶାର ଅଗ୍ରଣୀ ଦୈନିକ ଖବର କାଗଜ ଓ ଡିଜିଟାଲ ନ୍ୟୁଜ୍ ପୋର୍ଟାଲ | ଜନତାର ଦରବାର, ଆପଣଙ୍କ ସ୍ୱର | Odisha & Mayurbhanj News, E-Paper and Public Grievance Portal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
